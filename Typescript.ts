@@ -63,3 +63,28 @@ enum DiasSemana {
     Sabado,
     Domingo
 }
+
+// Ejercicio 7
+
+let variable: number | string;
+variable = "Messi";
+variable = 10;
+
+// Ejercicio 8
+
+interface Fila<T> {
+    agregar(elemento: T): void;
+    remover() : T | undefined;
+}
+
+class FilaCreada <T> implements Fila<T> {
+    private elementos: T[] = [];
+
+    agregar(elemento: T): void {
+        this.elementos.push(elemento);
+    }
+
+    remover(): T | undefined {
+        return this.elementos.shift();
+    }
+}
