@@ -42,3 +42,24 @@ class Vaca implements Animal {
 function describirAnimal(animal: Animal): void {
     console.log(`El animal ${animal.nombre} hace ${animal.gritar()}`);
 }
+
+// Ejercicio 4
+const perro: Perro = new Perro("Coco");
+const vaca: Vaca = new Vaca("Layla");
+const gato: Gato = new Gato("Mishifu");
+
+// Ejercicio 5
+describirAnimal(perro);
+describirAnimal(vaca);
+describirAnimal(gato);
+
+// Ejercicio 6
+enum DiasSemana {
+    Lunes,
+    Martes,
+    Miercoles,
+    Jueves,
+    Viernes,
+    Sabado,
+    Domingo
+}
